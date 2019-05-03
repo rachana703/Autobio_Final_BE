@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autobioscrypt</title>
+
+    <script src="/node_modules/web3/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="views/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="views/background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+      
+<div class="jumbotron d-flex align-items-center">
+<div class="container">
+    <div class="text-center">
+    <h1>Sign up </h1> <br>
+        <form name="f1" action="http://localhost:3000/signup" method="post">
+                    
+                    <div class="form-group col-xs-6" style="font-family: sans-serif;">    
+                        <label for="name2">Name</label>
+                        <input class="form-control" id="name2" type="text" name="name2" required/>
+                   </div>
+                   
+                   <br>
+                   <div class="form-group col-xs-6" style="font-family: sans-serif;">    
+                        <label for="gender">Gender: &nbsp</label>
+                        <input  id="gender" type="radio" name="gender" value="male">Male
+                        <input  id="gender" type="radio" name="gender" value="female">Female
+                        
+                   </div>
+                   <br>
+
+                   <div class="form-group col-xs-12" style="font-family: sans-serif;">    
+                        <label for="emailid">Email id</label>
+                        <input class="form-control" id="emailid" type="email" name="emailid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+                   </div>
+                   <br>
+                   <div class="form-group col-xs-6" style="font-family: sans-serif;">    
+                        <label for="age">Age</label>
+                        <input class="form-control" id="age" type="number" max="150" name="age" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;" required/>
+                   </div><br>
+                   <div class="form-group col-xs-6" style="font-family: sans-serif;">    
+                        <label for="mobile_no">Contact No.</label>
+                        <input class="form-control" id="mobile_no" type="number" name="mobile_no" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;" required/>
+                   </div>
+                   <br>
+
+
+                    <div class="form-group col-xs-6" style="font-family: sans-serif;" >
+                        <label for="username">Username</label>
+                        <input class="form-control" id="username" type="text" name="username" required/>
+                    </div><br>
+             
+                    <div class="form-group col-xs-6" style="font-family: sans-serif;">    
+                        <label for="password">Password</label>
+                        <input class="form-control" id="password" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+                   </div>
+                   <br>
+
+                    
+
+
+
+                    <div class="form-group-lg col-xs-12">    
+                        <input style="color: black;font-family: sans-serif;" class="btn btn-info" type="submit" id="submit" value="Signup"/>
+                   </div></br></br>
+
+                    <a href="http://localhost:3000/loginredirect">Already a User?</a>
+                         
+        </form>
+    </div>    
+</div>
+</div>
+</body>
+
+</html>
